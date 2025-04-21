@@ -3,7 +3,11 @@ import Navlist from "./Navlist";
 const Hamburger = () => {
   let [menu, setMenu] = useState(false);
   const handleClick = () => {
-    setMenu(!menu);
+    if(menu) {
+      setTimeout(()=>{setMenu(!menu)},100)
+    }else{
+      setMenu(!menu);
+    }
   };
   return (
     <>
@@ -14,7 +18,7 @@ const Hamburger = () => {
         <div className="bar"></div>
       </button>
       <nav className={`mobile-nav ${menu ? "is-active" : ""}`}>
-        <Navlist/>
+        <Navlist handleClick={handleClick}/>
       </nav>
     </>
   );

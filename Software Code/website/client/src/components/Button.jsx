@@ -5,9 +5,9 @@ export default function Button({name,state,type}) {
   let [isOFF, setIsOFF] = useState(state);
   return (
     <div className={`inline-block w-fit rounded-3xl delay-100 ${isOFF ? "black30" : "bg-[rgba(255,129,26,0.85)]"}`}>
-      <div className={`w-fit p-3 rounded-3xl pb-24 pl-3 z-0 delay-100 overflow-hidden backdrop-blur-md shadow-xl border border-white/10 ${isOFF ? "black30" : "bg-[rgba(255,129,26,0.85)]"}`}>
-        <div className="flex gap-x-22 items-start mb-8 z-20">
-          <img src={icon(type)} alt="tv" />
+      <div className={`w-fit flex flex-col p-3 rounded-3xl pb-12 600b:pb-24 pl-3 z-0 delay-100 overflow-hidden backdrop-blur-md shadow-xl border border-white/10 ${isOFF ? "black30" : "bg-[rgba(255,129,26,0.85)]"}`}>
+        <div className="flex flex-col 500b:flex-row gap-10 600b:gap-22 items-center 500b:items-start mb-8 z-20">
+          <img src={icon(type)} alt="tv" className="mt-2"/>
           <div
             className={`p-1 h-22 rounded-4xl flex items-start justify-center relative cursor-pointer delay-100 ${isOFF ? "bg-[rgba(0,0,0,0.5)]" : "bg-[#FFB11A]"}`}
             onClick={() => setIsOFF(!isOFF)}
@@ -21,7 +21,7 @@ export default function Button({name,state,type}) {
             </div>
           </div>
         </div>
-        <h3 className="text-white text-[24px] font-poppins font-semibold">{name}</h3>
+        <h3 className="text-white 500b:self-center 400b:text-sm 500b:text-lg 600b:text-[24px] font-poppins font-semibold">{name}</h3>
       </div>
     </div>
   );

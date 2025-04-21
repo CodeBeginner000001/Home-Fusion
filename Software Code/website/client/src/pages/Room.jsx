@@ -22,7 +22,7 @@ export default function Room() {
       {/* Main Content */}
       <div className="relative z-20 px-6 xxxs:px-12 lg:px-18 pb-30">
         <Navbar brandColor="white" />
-        <div className="mt-40 flex flex-col gap-y-24 items-start 400b:pl-10">
+        <div className="mt-40 flex flex-col gap-y-24 items-start 600b:pl-10">
           <img
             src={backButton}
             alt="back"
@@ -32,7 +32,8 @@ export default function Room() {
           <h1 className="text-white font-poppins text-4xl">
             {roomData.roomName}
           </h1>
-          <div className="flex flex-wrap gap-y-10 gap-x-20">
+          <div className="self-center">
+          <div className="grid grid-cols-1 300b:grid-cols-2 1000b:grid-cols-3 1300b:grid-cols-4 1600b:grid-cols-5 2000b:grid-cols-6 gap-y-10 gap-x-6 500b:gap-x-10 700b:gap-x-20">
             {Object.entries(roomData.Appliances).map(([type, items]) =>
               items.map((appliance, idx) => (
                 <Button
@@ -43,6 +44,7 @@ export default function Room() {
                 />
               ))
             )}
+          </div>
           </div>
         </div>
       </div>

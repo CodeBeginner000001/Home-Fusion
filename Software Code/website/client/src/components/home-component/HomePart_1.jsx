@@ -9,7 +9,7 @@ import Navbar from "../Navbar.jsx";
 import homeImage from "../../../src/assets/home-page/drawing-room.svg"
 const HomePart_1 = () => {
   return (
-    <div className="w-100% bg-cover px-6 xxxs:px-12 lg:px-18 font-roboto pb-26 bg-no-repeat" style={{backgroundImage: `url(${homeImage})`}}>
+    <div className="w-100% bg-cover px-6 xxxs:px-12 lg:px-18 font-roboto pb-26 bg-no-repeat" style={{backgroundImage: `url(${homeImage})`}} id="home">
       <Navbar brandColor="bg-gradient-to-b from-[#FF9238] from-20% to-white bg-clip-text text-transparent"/>
       <div className="1600b:mx-20 2000b:mx-40">
         <div className="py-10 md:py-16 lg:py-24 flex justify-between">
