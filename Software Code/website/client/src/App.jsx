@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
-    path: "/room/:roomName",
+    path: "/:roomName",
     element: <Room />,
   },
   {
