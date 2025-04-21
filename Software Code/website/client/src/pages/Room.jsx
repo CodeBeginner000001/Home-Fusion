@@ -22,7 +22,7 @@ export default function Room() {
       {/* Main Content */}
       <div className="relative z-20 px-6 xxxs:px-12 lg:px-18 pb-30">
         <Navbar brandColor="white" />
-        <div className="mt-40 flex flex-col gap-y-24 items-start pl-10">
+        <div className="mt-40 flex flex-col gap-y-24 items-start 400b:pl-10">
           <img
             src={backButton}
             alt="back"
