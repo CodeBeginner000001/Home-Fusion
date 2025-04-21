@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ShutDown, BlackShutDown } from "../assets/Appliances/index";
+import { ShutDown, BlackShutDown } from "../../src/assets/Appliances/index";
 import {icon} from "../contants/Rooms"
 export default function Button({name,state,type}) {
   let [isOFF, setIsOFF] = useState(state);

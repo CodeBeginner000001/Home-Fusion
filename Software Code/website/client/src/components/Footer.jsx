@@ -6,7 +6,7 @@ import {
   logo,
   mail,
   telephone1,
-} from "../assets/footer";
+} from "../../src/assets/footer";
 
 const Footer = () => {
   return (
