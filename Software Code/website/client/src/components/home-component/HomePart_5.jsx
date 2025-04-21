@@ -2,7 +2,7 @@ import { contactus, envelope, telephone} from "../../assets/home-page/index"
 
 const HomePart_5 = () => {
   return (
-    <div className="px-8 400b:px-12 600b:px-18 my-10 xxxs:my-20 font-inter 1600b:mx-20 2000b:mx-40 2000b:mt-60">
+    <div className="px-8 400b:px-12 600b:px-18 xxxs:my-20 font-inter 1600b:mx-20 2000b:mx-40 2000b:mt-60">
       <p className='400b:text-xl 500b:text-2xl 1700b:text-4xl font-semibold text-[#D49B54] mb-2 xxxs:mb-4 400b:mb-12 1000b:mb-18'>Contact Us</p>
       <div className='flex flex-col 900b:flex-row xxxs:gap-8 1000b:gap-20 1300b:gap-40'>
         <img src={contactus} alt="Contact Us" className="max-xxxs:h-60 max-500b:h-80 max-900b:h-100 1600b:h-140 2000b:h-180"/>
