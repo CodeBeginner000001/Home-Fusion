@@ -1,4 +1,4 @@
-import Hamburger from "./hamburger";
+import Hamburger from "./Hamburger";
 import Navlist from "./Navlist";
 const Navbar = ({brandColor}) => {
   return (
