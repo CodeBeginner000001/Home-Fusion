@@ -1,7 +1,7 @@
-import bedroom from "../assets/Rooms/bedroom.svg";
-import kitchen from "../assets/Rooms/kitchen.svg";
+import bedroom from "../../src/assets/Rooms/bedroom.svg";
+import kitchen from "../../src/assets/Rooms/kitchen.svg";
 
-import {tvIcon,fanIcon,lightIcon,acIcon,doorIcon} from "../assets/Appliances/index"
+import {tvIcon,fanIcon,lightIcon,acIcon,doorIcon} from "../../src/assets/Appliances/index"
 
 export const a = [
     {

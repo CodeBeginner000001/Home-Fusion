@@ -7,9 +7,7 @@ import Button from "../components/Button";
 export default function Room() {
   const { roomName } = useParams();
   const navigate = useNavigate();
-  
   const roomData = a.find(room => room.roomName.toLowerCase().replace(/[^a-z0-9]/g, "")=== roomName);
-  console.log(roomData)
   return (
     <div className="relative min-h-screen">
       {/* Background Image */}
