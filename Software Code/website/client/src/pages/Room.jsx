@@ -29,7 +29,7 @@ export default function Room() {
             className="h-15 cursor-pointer"
             onClick={() => navigate(-1)}
           />
-          <h1 className="text-white font-poppins text-4xl">
+          <h1 className="text-white font-poppins text-4xl max-xxxs:text-center">
             {roomData.roomName}
           </h1>
           <div className="self-center">
@@ -41,6 +41,7 @@ export default function Room() {
                   name={appliance.name}
                   state={appliance.state}
                   type={type}
+                  roomName={roomName}
                 />
               ))
             )}
