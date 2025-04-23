@@ -33,7 +33,7 @@ export default function Room() {
             {roomData.roomName}
           </h1>
           <div className="self-center">
-          <div className="grid grid-cols-1 300b:grid-cols-2 1000b:grid-cols-3 1300b:grid-cols-4 1600b:grid-cols-5 2000b:grid-cols-6 gap-y-10 gap-x-6 500b:gap-x-10 700b:gap-x-20">
+          <div className="grid grid-cols-1 400b:grid-cols-2  1000b:grid-cols-3 1300b:grid-cols-4 1600b:grid-cols-5 2000b:grid-cols-6 gap-y-10 gap-x-6 500b:gap-x-10 700b:gap-x-20">
             {Object.entries(roomData.Appliances).map(([type, items]) =>
               items.map((appliance, idx) => (
                 <Button
