@@ -18,7 +18,7 @@ const Hamburger = () => {
         <div className="bar"></div>
       </button>
       <nav className={`mobile-nav ${menu ? "is-active" : ""}`}>
-        <Navlist handleClick={handleClick}/>
+        <Navlist handleClick={handleClick} textColor="text-white"/>
       </nav>
     </>
   );

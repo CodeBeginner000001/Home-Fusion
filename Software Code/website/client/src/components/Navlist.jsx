@@ -2,9 +2,9 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { navlist } from "../../src/contants/text";
 
-const Navlist = ({ handleClick }) => {
+const Navlist = ({ handleClick,textColor }) => {
   return (
-    <div className="text-lg list-none items-center flex flex-col gap-y-10 md:flex-row md:gap-x-10 lg:gap-x-20">
+    <div className={`text-lg list-none items-center flex flex-col gap-y-10 md:flex-row md:gap-x-10 lg:gap-x-20 ${textColor}`}>
       {navlist.map((item) =>
         item.type === "scroll" ? (
           <ScrollLink

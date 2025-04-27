@@ -1,13 +1,13 @@
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { a } from "../contants/Rooms";
+import { Rooms } from "../contants/Rooms";
 import { backButton } from "../assets/Appliances";
-import Button from "../components/Button";
+import Room_button from "../components/Room_button";
 
 export default function Room() {
   const { roomName } = useParams();
   const navigate = useNavigate();
-  const roomData = a.find(room => room.roomName.toLowerCase().replace(/[^a-z0-9]/g, "")=== roomName);
+  const roomData = Rooms.find(room => room.roomName.toLowerCase().replace(/[^a-z0-9]/g, "")=== roomName);
   return (
     <div className="relative min-h-screen">
       {/* Background Image */}
@@ -21,7 +21,7 @@ export default function Room() {
 
       {/* Main Content */}
       <div className="relative z-20 px-6 xxxs:px-12 lg:px-18 pb-30">
-        <Navbar brandColor="white" />
+        <Navbar brandColor="text-white"textColor={"text-white"}/>
         <div className="mt-40 flex flex-col gap-y-14 sm:gap-y-24 items-start 600b:pl-10">
           <img
             src={backButton}
@@ -36,7 +36,7 @@ export default function Room() {
           <div className="grid grid-cols-1 400b:grid-cols-2  1000b:grid-cols-3 1300b:grid-cols-4 1600b:grid-cols-5 2000b:grid-cols-6 gap-y-10 gap-x-6 500b:gap-x-10 700b:gap-x-20">
             {Object.entries(roomData.Appliances).map(([type, items]) =>
               items.map((appliance, idx) => (
-                <Button
+                <Room_button
                   key={`${type}-${idx}`}
                   name={appliance.name}
                   state={appliance.state}

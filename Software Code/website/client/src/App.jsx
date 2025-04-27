@@ -4,6 +4,7 @@ import Room from "./pages/Room";
 import Home from "./pages/Home"
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
+import TotalRoom from "./pages/TotalRoom";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <SignIn/>
+  },
+  {
+    path: "/totalroom",
+    element: <TotalRoom/>
   },
 ]);
 
