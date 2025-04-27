@@ -8,6 +8,30 @@ export default function Room() {
   const { roomName } = useParams();
   const navigate = useNavigate();
   const roomData = Rooms.find(room => room.roomName.toLowerCase().replace(/[^a-z0-9]/g, "")=== roomName);
+  if (!roomData) {
+    return (
+      <div className="min-h-screen bg-white flex justify-center px-6">
+        <div className="flex flex-col items-center">
+          <img
+            src="../../src/assets/404Errror.png" // <-- Update the path
+            alt="404 Illustration"
+            className="w-200 mb-8"
+          />
+          <h1 className="text-5xl font-extrabold text-gray-900 mb-4">404</h1>
+          <p className="text-xl text-gray-600 mb-8 text-center">
+            Oops! The page you're looking for doesn't exist.
+          </p>
+          <button
+            onClick={() => navigate("/")}
+            className="px-6 py-3 bg-[#FF9E49] text-white rounded hover:bg-[#FB841B] transition duration-300"
+          >
+            Go Home
+          </button>
+        </div>
+      </div>
+    );
+    
+  }
   return (
     <div className="relative min-h-screen">
       {/* Background Image */}

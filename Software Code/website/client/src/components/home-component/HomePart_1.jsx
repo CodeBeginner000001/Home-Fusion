@@ -27,7 +27,7 @@ const HomePart_1 = () => {
               ease.
             </p>
             <button className="rounded-4xl bg-[#FF9E49] text-white  cursor-pointer py-2 px-6 300b:py-4 300b:px-8 900b:py-5 900b:px-14 1400b:py-6 1400b:px-18 font-bold text-2xl 900b:text-3xl 400b:ml-6">
-              Admin Login
+              Login
             </button>
           </div>
           <div className="hidden md:flex flex-col justify-around items-start mt-10 1000b:pl-16 1200b:pl-28">
