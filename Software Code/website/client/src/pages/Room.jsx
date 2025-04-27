@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { Rooms } from "../contants/Rooms";
 import { backButton } from "../assets/Appliances";
 import Room_button from "../components/Room_button";
+import ErrorImage from "../assets/404Errror.png"
 
 export default function Room() {
   const { roomName } = useParams();
@@ -13,7 +14,7 @@ export default function Room() {
       <div className="min-h-screen bg-white flex justify-center px-6">
         <div className="flex flex-col items-center">
           <img
-            src="../../src/assets/404Errror.png" // <-- Update the path
+            src={ErrorImage} // <-- Update the path
             alt="404 Illustration"
             className="w-200 mb-8"
           />
