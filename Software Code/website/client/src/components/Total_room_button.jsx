@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { icon } from "../contants/Rooms";
 import { arrow } from "../assets/Appliances/total_room_icon/index"
+import { Link } from "react-router-dom";
 export default function Total_room_button({ details, type }) {
   let [isOff, setIsOff] = useState(details.state);
   const handleClick = () => {
@@ -55,7 +56,7 @@ export default function Total_room_button({ details, type }) {
             ></div>
           </div>
           {
-            details.roomName && <div><img src={arrow} alt="" className="h-8"/></div>
+            details.roomName && <Link  to={`/${details.roomName.replace(/\s+/g, '').toLowerCase()}`} key={details.roomName} onClick={() =>window.scrollTo({ top: 0, behavior: 'smooth' })}><img src={arrow} alt="" className="h-8"/></Link>
           }
         </div>
       </div>
