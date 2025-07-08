@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ShutDown, BlackShutDown } from "../assets/Appliances/index";
-import {icon} from "../contants/Rooms"
+import { BlackShutDown, ShutDown } from "../assets/Appliances/index";
+import { icon } from "../constants/Rooms";
 export default function Room_button({name,state,type,roomName}) {
   let [isOFF, setIsOFF] = useState(state);
   return (

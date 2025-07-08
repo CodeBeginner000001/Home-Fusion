@@ -6,7 +6,7 @@ import {
 } from "../../assets/home-page/index";
 import Tags from "./component/Tags.jsx";
 import Navbar from "../Navbar.jsx";
-import homeImage from "../../../src/assets/home-page/drawing-room.svg"
+import homeImage from "../../assets/home-page/drawing-room.svg"
 const HomePart_1 = () => {
   return (
     <div className="w-100% bg-cover px-6 xxxs:px-12 lg:px-18 font-roboto pb-26 bg-no-repeat" style={{backgroundImage: `url(${homeImage})`}} id="home">
