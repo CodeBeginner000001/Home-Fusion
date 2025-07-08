@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll"; // you can remove this if not used anymore
 import { Link as RouterLink } from "react-router-dom";
-import { navlist } from "../../src/contants/text";
+import { navlist } from "../../src/contants/miscel";
 
 
 const Navlist = ({ handleClick, textColor }) => {

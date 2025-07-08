@@ -1,8 +1,9 @@
 import bedroom from "../../src/assets/Rooms/bedroom.svg";
 import kitchen from "../../src/assets/Rooms/kitchen.svg";
-import livingroom from "../../src/assets/Rooms/livingroom.svg"
-import locks from "../../src/assets/Rooms/locks.svg"
-import washroom from "../../src/assets/Rooms/washroom.svg"
+import livingroom from "../../src/assets/Rooms/livingroom.svg";
+import locks from "../../src/assets/Rooms/locks.svg";
+import washroom from "../../src/assets/Rooms/washroom.svg";
+import { acIcon, doorIcon, fanIcon, lightIcon, tvIcon } from "../assets/Appliances/index";
 import {
   ac,
   door,
@@ -10,8 +11,7 @@ import {
   light,
   main_door,
   tv
-} from "../../src/assets/Appliances/total_room_icon/index"
-import { tvIcon, fanIcon, lightIcon, acIcon, doorIcon } from "../../src/assets/Appliances/index"
+} from "../assets/Appliances/total_room_icon/index";
 
 export const Rooms = [
   {
@@ -114,7 +114,9 @@ export const Rooms = [
         { name: "Smart AC 1", state: true },
       ],
       Door: [
-        { name: "Smart Door 2", state: false }
+        { name: "Smart Door 2", state: false },
+        { name: "Smart Door 3", state: false },
+        { name: "Smart Door 4", state: false }
       ]
     }
   }

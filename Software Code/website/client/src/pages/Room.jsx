@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { Rooms } from "../contants/Rooms";
+import { Rooms } from "../constants/Rooms";
 import { backButton } from "../assets/Appliances";
 import { error } from "../assets/Error";
 import Room_button from "../components/Room_button"

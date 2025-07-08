@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import totalroom from "../assets/Rooms/totalroom.svg"; // ✅ Make sure the path is correct
 import Total_room_button from "../components/Total_room_button";
-import { mainDoors,Rooms } from "../contants/Rooms";
+import { mainDoors,Rooms } from "../constants/Rooms";
 export default function TotalRoom() {
   return (
     <>

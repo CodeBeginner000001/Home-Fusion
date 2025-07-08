@@ -4,4 +4,7 @@ export const navlist = [
     { label: "Contact Us", type: "scroll" },
     { label: "Register/Login", type: "route", path: "/signin" }
   ];
-  
+export const checknavlistlength = (navlist)=>{
+    if(navlist.length>4) return true
+    return false
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { icon } from "../contants/Rooms";
-import { arrow } from "../assets/Appliances/total_room_icon/index"
 import { Link } from "react-router-dom";
+import { arrow } from "../assets/Appliances/total_room_icon/index";
+import { icon } from "../constants/Rooms";
 export default function Total_room_button({ details, type }) {
   let [isOff, setIsOff] = useState(details.state);
   const handleClick = () => {
